@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StudentHub - Contact</title>
+  <title>StudentHub - Feedback</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header>
     <div class="logo">StudentHub</div>
@@ -22,35 +22,41 @@
         <li><a href="attendance.html">Attendance</a></li>
         <li><a href="notices.html">Notices</a></li>
         <li><a href="profile.html">Profile</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="admin.html">Admin</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="feedback.html" aria-current="page">Feedback</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main-content">
-    <section aria-labelledby="contact-title">
-      <h1 id="contact-title">Contact Us</h1>
-      <p>Have a question or issue? Send us a message.</p>
+    <section aria-labelledby="feedback-title">
+      <h1 id="feedback-title">Student Feedback</h1>
+      <p>Your suggestions help improve the portal experience.</p>
 
-      <form action="#" method="get">
+      <form action="feedback.html" method="get">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <input id="name" type="text" name="name" required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input id="email" type="email" name="email" required>
+
+        <label for="rating">Overall Rating</label>
+        <select id="rating" name="rating">
+          <option value="5">Excellent</option>
+          <option value="4">Good</option>
+          <option value="3">Average</option>
+          <option value="2">Poor</option>
+          <option value="1">Very Poor</option>
+        </select>
 
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit">Submit Feedback</button>
       </form>
-
-      <h2>College Address</h2>
-      <p>CSPIT, CHARUSAT, Changa, Anand, Gujarat, India</p>
     </section>
   </main>
 
@@ -58,6 +64,5 @@
     <p>&copy; <span data-year></span> StudentHub | CHARUSAT</p>
   </footer>
 
-    
 </body>
 </html>

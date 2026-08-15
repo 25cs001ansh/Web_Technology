@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StudentHub - Profile</title>
+  <title>StudentHub - Login</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header>
     <div class="logo">StudentHub</div>
@@ -16,12 +16,12 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="register.html">Register</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="login.html" aria-current="page">Login</a></li>
         <li><a href="dashboard.html">Dashboard</a></li>
         <li><a href="courses.html">Courses</a></li>
         <li><a href="attendance.html">Attendance</a></li>
         <li><a href="notices.html">Notices</a></li>
-        <li><a href="profile.html" aria-current="page">Profile</a></li>
+        <li><a href="profile.html">Profile</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="admin.html">Admin</a></li>
@@ -32,34 +32,33 @@
   </header>
 
   <main id="main-content">
-    <section aria-labelledby="profile-title">
-      <h1 id="profile-title">My Profile</h1>
+    <section aria-labelledby="login-title">
+      <h1 id="login-title">Login</h1>
+      <p>Enter your details below to access your dashboard.</p>
 
-      <article class="card">
-        <p><strong>Name:</strong> Ansh Patel</p>
-        <p><strong>Student ID:</strong> 25CS001</p>
-        <p><strong>Branch:</strong> Computer Science</p>
-        <p><strong>Semester:</strong> 2</p>
-        <p><strong>Email:</strong> ansh.25cs001@charusat.edu.in</p>
-      </article>
+      <form action="dashboard.html" method="get">
+        <label for="userId">Student / Faculty ID</label>
+        <input type="text" id="userId" name="userId" placeholder="e.g. 25CS001" required>
 
-      <h2>Update Profile</h2>
-      <form action="profile.html" method="get">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
 
-        <label for="address">Address</label>
-        <textarea id="address" name="address" rows="3" placeholder="Enter address"></textarea>
+        <label for="role">Login as</label>
+        <select id="role" name="role">
+          <option value="student">Student</option>
+          <option value="faculty">Faculty</option>
+          <option value="admin">Admin</option>
+        </select>
 
-        <button type="submit">Save Changes</button>
+        <button type="submit">Login</button>
       </form>
+
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
     </section>
   </main>
 
   <footer>
     <p>&copy; <span data-year></span> StudentHub | CHARUSAT</p>
   </footer>
-
-    
 </body>
 </html>

@@ -7,15 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header>
-    <div class="header-bar">
-      <div class="logo">StudentHub</div>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">&#9776; Menu</button>
-    </div>
+    <div class="logo">StudentHub</div>
     <nav aria-label="Main navigation">
-      <ul id="primary-nav">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="register.html" aria-current="page">Register</a></li>
@@ -39,38 +36,28 @@
       <h1 id="register-title">Create an Account</h1>
       <p>Fill in your details to register on StudentHub.</p>
 
-      <form action="login.html" method="get" class="form-grid">
-        <div class="field">
-          <label for="fullName">Full Name</label>
-          <input type="text" id="fullName" name="fullName" required>
-        </div>
+      <form action="login.html" method="get">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required>
 
-        <div class="field">
-          <label for="studentId">Student ID</label>
-          <input type="text" id="studentId" name="studentId" placeholder="e.g. 25CS001" required>
-        </div>
+        <label for="studentId">Student ID</label>
+        <input type="text" id="studentId" name="studentId" placeholder="e.g. 25CS001" required>
 
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-        <div class="field">
-          <label for="branch">Branch</label>
-          <select id="branch" name="branch">
-            <option value="CS">Computer Science</option>
-            <option value="IT">Information Technology</option>
-            <option value="EC">Electronics & Communication</option>
-            <option value="ME">Mechanical</option>
-          </select>
-        </div>
+        <label for="branch">Branch</label>
+        <select id="branch" name="branch">
+          <option value="CS">Computer Science</option>
+          <option value="IT">Information Technology</option>
+          <option value="EC">Electronics & Communication</option>
+          <option value="ME">Mechanical</option>
+        </select>
 
-        <div class="field form-full">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required>
-        </div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
 
-        <button type="submit" class="form-full">Register</button>
+        <button type="submit">Register</button>
       </form>
 
       <p>Already have an account? <a href="login.html">Login here</a></p>
@@ -81,6 +68,5 @@
     <p>&copy; <span data-year></span> StudentHub | CHARUSAT</p>
   </footer>
 
-    
 </body>
 </html>
