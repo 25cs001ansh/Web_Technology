@@ -199,6 +199,5 @@ Students will be able to:
 7. Create accessible forms.
 8. Test and debug client-side validation.
 
-
 ## Conclusion
 This practical demonstrates how HTML5, CSS3, and JavaScript can be combined to create an accessible and user-friendly student registration form with robust client-side validation and Regular Expression-based input checking.
