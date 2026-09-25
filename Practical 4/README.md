@@ -1,183 +1,338 @@
-# StudentHub – Responsive UI Design using CSS Grid, Flexbox, and Bootstrap/Tailwind
+# Practical 4: JavaScript DOM Manipulation, Event Handling, and UI Interactivity
 
-## Overview
+## 📌 Practical Overview
 
-This project contains the HTML5 version of the StudentHub website. Existing HTML pages were updated to use HTML5 semantic elements, improving structure, readability, accessibility, and maintainability.
+This practical focuses on enhancing a static HTML/CSS website with
+**JavaScript-based DOM manipulation, event handling, and interactive UI
+components**.
 
-Responsive layouts were also designed for the **Home, About, Registration, Dashboard, and Events** pages using **CSS Grid and Flexbox** with a mobile-first approach.
+The project demonstrates how JavaScript can be used to dynamically
+modify webpage elements, respond to user actions, manage UI state, and
+improve the overall user experience.
 
-## Objective
+------------------------------------------------------------------------
 
-The project aims to:
+## 🎯 Problem Definition
 
-* Convert existing StudentHub pages to HTML5.
-* Use semantic HTML5 elements.
-* Maintain a consistent page structure.
-* Improve accessibility.
-* Create responsive layouts using CSS Grid and Flexbox.
-* Follow a mobile-first responsive design approach.
-* Organize content with meaningful HTML and CSS structures.
+Add dynamic UI components such as:
 
-## Pages Included
+-   Collapsible FAQ sections
+-   Modal popup
+-   Image/content slider
+-   Notification banner
+-   Hamburger navigation menu
+-   Light/Dark theme switcher
 
-* Home (`index.html`)
-* About (`about.html`)
-* Register (`register.html`)
-* Login (`login.html`)
-* Dashboard (`dashboard.html`)
-* Events (`events.html`)
-* Profile (`profile.html`)
-* Contact (`contact.html`)
-* Admin (`admin.html`)
-* FAQ (`faq.html`)
-* Feedback (`feedback.html`)
+These components are implemented using **JavaScript ES6+, HTML5, and
+CSS3**.
 
-## Responsive Pages
+------------------------------------------------------------------------
 
-Responsive layouts were specifically designed for:
+## 📁 Project Structure
 
-* Home
-* About
-* Registration
-* Dashboard
-* Events
-
-The layouts automatically adjust according to different screen sizes such as:
-
-* Mobile phones
-* Tablets
-* Laptops
-* Desktop screens
-
-## CSS Layout Techniques Used
-
-### CSS Flexbox
-
-Flexbox is used for:
-
-* Navigation menus
-* Header layouts
-* Button groups
-* Form elements
-* Horizontal and vertical alignment
-* Responsive content arrangement
-
-Example:
-
-```css
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-```
-
-### CSS Grid
-
-CSS Grid is used for:
-
-* Dashboard cards
-* Event cards
-* Page sections
-* Multi-column layouts
-* Responsive content grids
-
-Example:
-
-```css
-.dashboard-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-```
-
-## Mobile-First Design
-
-The website follows a mobile-first approach.
-
-The basic layout is designed for smaller screens first and then enhanced for larger screens using CSS media queries.
-
-Example:
-
-```css
-.container {
-    width: 100%;
-    padding: 15px;
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 1200px;
-        margin: auto;
-    }
-}
-```
-
-## HTML5 Semantic Elements Used
-
-* `<header>`
-* `<nav>`
-* `<main>`
-* `<section>`
-* `<article>`
-* `<aside>`
-* `<footer>`
-
-These elements provide meaningful structure to the website and improve readability and accessibility.
-
-## Accessibility Features
-
-* Semantic page landmarks
-* Proper heading hierarchy
-* Labels for form inputs
-* Meaningful navigation structure
-* Responsive viewport meta tag
-* Descriptive page titles
-* Accessible form structure
-* Clear content organization
-
-## Responsive Design Features
-
-* Mobile-first layout
-* Flexible containers
-* Responsive navigation
-* CSS Grid for card layouts
-* Flexbox for alignment
-* Media queries for larger screens
-* Flexible spacing and sizing
-* No fixed-width layouts that break on mobile devices
-
-## Project Structure
-
-```text
-StudentHub/
+``` text
+Practical-4/
+│
+├── css/
+│   └── CSS stylesheets
+│
+├── js/
+│   └── JavaScript files for DOM manipulation and interactivity
+│
+├── Image/
+│   └── Website images/assets
 │
 ├── index.html
 ├── about.html
-├── register.html
-├── login.html
+├── admin.html
+├── attendance.html
+├── contact.html
+├── courses.html
 ├── dashboard.html
 ├── events.html
-├── profile.html
-├── contact.html
-├── admin.html
 ├── faq.html
 ├── feedback.html
-├── style.css
+├── login.html
+├── notices.html
+├── profile.html
+├── register.html
 └── README.md
 ```
 
-## Technologies Used
+------------------------------------------------------------------------
 
-* HTML5
-* CSS3
-* CSS Flexbox
-* CSS Grid
-* CSS Media Queries
-* Responsive Web Design
+## 🛠️ Tools and Technologies
 
-## Conclusion
+-   **HTML5** -- Page structure and content
+-   **CSS3** -- Styling, layouts, transitions, and responsive UI
+-   **JavaScript ES6+** -- DOM manipulation and event handling
+-   **Browser Developer Tools** -- Debugging and console testing
+-   **localStorage** -- Saving the user's theme preference
 
-The StudentHub website has been converted into a structured HTML5 project using semantic elements. Responsive layouts for the Home, About, Registration, Dashboard, and Events pages were created using **CSS Grid and Flexbox**. The mobile-first approach ensures that the website provides a consistent and accessible experience across mobile, tablet, and desktop devices.
+------------------------------------------------------------------------
+
+## ✨ Key Features
+
+### 1. Collapsible FAQ
+
+FAQ items can be expanded and collapsed when the user clicks on a
+question.
+
+**JavaScript concepts used:** - DOM selection - Click events - Class
+manipulation - Show/hide content
+
+### 2. Modal Popup
+
+A modal window can be displayed dynamically in response to a user
+action.
+
+**JavaScript concepts used:** - Event listeners - DOM manipulation - CSS
+class toggling - Closing the modal
+
+### 3. Image / Content Slider
+
+The slider allows users to move between different images or content
+sections.
+
+**JavaScript concepts used:** - Event handling - Array/index
+manipulation - DOM content updates - Basic animation/transition effects
+
+### 4. Notification Banner
+
+A notification message can be displayed to provide useful information to
+the user and can be dismissed when required.
+
+### 5. Hamburger Menu
+
+A hamburger button provides a compact navigation menu, particularly
+useful for smaller screen sizes.
+
+**JavaScript concepts used:** - Click event listener - Class toggling -
+Responsive navigation
+
+### 6. Light/Dark Theme Switcher
+
+Users can switch between light and dark themes.
+
+The selected theme can be stored using `localStorage`, allowing the
+preference to be restored when the page is opened again.
+
+Example:
+
+``` javascript
+localStorage.setItem("theme", "dark");
+```
+
+The saved preference can then be read when the page loads.
+
+------------------------------------------------------------------------
+
+## 🔑 Key Questions / Analysis / Interpretation
+
+### 1. How are DOM elements selected and modified?
+
+JavaScript provides methods such as:
+
+``` javascript
+document.getElementById("elementId");
+document.querySelector(".className");
+document.querySelectorAll(".item");
+```
+
+After selecting an element, its content, classes, attributes, or styles
+can be modified dynamically.
+
+### 2. Are event listeners attached correctly?
+
+Event listeners are used to execute JavaScript when users interact with
+the webpage.
+
+Example:
+
+``` javascript
+button.addEventListener("click", function () {
+    // Action performed after clicking the button
+});
+```
+
+### 3. Is localStorage used for remembering the theme choice?
+
+Yes. `localStorage` can store the selected theme in the browser.
+
+Example:
+
+``` javascript
+localStorage.setItem("theme", "dark");
+```
+
+The value can be retrieved later using:
+
+``` javascript
+const theme = localStorage.getItem("theme");
+```
+
+### 4. Does interactivity improve usability without breaking accessibility?
+
+Interactive elements should remain easy to understand and operate.
+Buttons should have clear labels, navigation should remain usable, and
+content should not become inaccessible when JavaScript is enabled.
+
+------------------------------------------------------------------------
+
+## 🎓 Key Skills Addressed
+
+-   DOM selection
+-   DOM manipulation
+-   Event handling
+-   JavaScript ES6+
+-   CSS class manipulation
+-   `localStorage`
+-   Basic animation and transitions
+-   Dynamic UI updates
+-   Browser console debugging
+-   Responsive navigation
+
+------------------------------------------------------------------------
+
+## 💡 Applications
+
+The concepts demonstrated in this practical are useful for:
+
+-   Interactive dashboards
+-   Student portals
+-   Admin panels
+-   Responsive websites
+-   Dynamic navigation systems
+-   FAQ sections
+-   Notification systems
+-   User preference management
+-   Modern frontend applications
+
+------------------------------------------------------------------------
+
+## ⏱️ Time Requirement
+
+  Activity               Hours
+  ------------------ ---------
+  Implementation       4 hours
+  Total Engagement     6 hours
+
+------------------------------------------------------------------------
+
+## 🧪 Testing and Browser Console
+
+The project should be tested using browser Developer Tools.
+
+Check for:
+
+-   JavaScript errors in the Console
+-   Correct button and menu behaviour
+-   FAQ expand/collapse functionality
+-   Modal opening and closing
+-   Slider navigation
+-   Theme switching
+-   Theme persistence after page refresh
+-   Responsive hamburger menu behaviour
+
+------------------------------------------------------------------------
+
+## 📚 Learning Outcome
+
+After completing this practical, students will be able to:
+
+1.  Select and manipulate HTML elements using JavaScript.
+2.  Attach and handle browser events.
+3.  Create interactive frontend components.
+4.  Use CSS classes dynamically from JavaScript.
+5.  Store and restore UI preferences using `localStorage`.
+6.  Apply basic JavaScript animations and transitions.
+7.  Debug frontend behaviour using browser Developer Tools.
+
+------------------------------------------------------------------------
+
+## 🔗 CO Mapping
+
+**CO3, CO4**
+
+------------------------------------------------------------------------
+
+## 🚀 Advanced / Intermediate Extensions
+
+### Intermediate
+
+Add smooth transition effects to:
+
+-   Cards
+-   Buttons
+-   FAQ sections
+-   Menus
+-   Modals
+
+Example:
+
+``` css
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+```
+
+### Advanced
+
+Store user interface preferences using `localStorage` and restore them
+automatically when the website loads.
+
+Possible preferences include:
+
+-   Light/Dark theme
+-   Sidebar/menu state
+-   Selected slider position
+-   Other non-sensitive UI preferences
+
+------------------------------------------------------------------------
+
+## 📋 Post Laboratory Work
+
+The final submission should include:
+
+-   Live demo of the website
+-   Complete source code
+-   README documentation
+-   Source-code explanation
+-   Demonstration of JavaScript interactions
+-   Browser console testing
+
+------------------------------------------------------------------------
+
+## 📝 Evaluation Strategy
+
+The practical can be evaluated based on:
+
+-   DOM manipulation logic
+-   Correct event handling
+-   Functionality of interactive components
+-   Usability
+-   Accessibility considerations
+-   Browser console testing
+-   Quality of source-code explanation
+
+------------------------------------------------------------------------
+
+## ▶️ How to Run
+
+1.  Download or clone the project.
+2.  Open the project folder.
+3.  Open `index.html` in a modern web browser.
+4.  Navigate through the website.
+5.  Test each interactive component.
+6.  Open **Developer Tools → Console** to check for JavaScript errors.
+
+For the best development experience, the project can also be opened
+using a local development server such as **VS Code Live Server**.
+
+------------------------------------------------------------------------
+
+
