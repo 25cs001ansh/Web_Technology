@@ -19,15 +19,17 @@ Regular Expressions are used for validating name, email, mobile number, and pass
 
 ## Project Structure
 ```text
-Practical-5/
+Practical 5/
 ├── css/
 │   └── style.css
 ├── js/
-│   └── script.js
+│   └── validation.js
 ├── index.html
 └── README.md
 ```
 
+## Practical Outcome
+This practical demonstrates how to build a complete student registration interface that validates user input before submission, guides the user with clear feedback, and provides a responsive, accessible form experience using HTML, CSS and JavaScript.
 
 
 ## Key Features
