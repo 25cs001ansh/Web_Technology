@@ -128,6 +128,7 @@ Open:
 Students will learn to **fetch JSON data, process arrays, dynamically render frontend views, and implement search, filtering, sorting, pagination, and error handling**.
 
 
+
 ## Conclusion
 
 This practical demonstrates dynamic frontend development using **JSON, Fetch API, DOM manipulation, array methods, search, filter, sorting, pagination, and modular JavaScript**.
