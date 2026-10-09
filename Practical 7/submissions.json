@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Ansh Adodariya",
+        "email": "anshadodariya1@gmail.com",
+        "mobile": "9876543210",
+        "course": "Computer Science Engineering",
+        "date": "2026-10-05 15:50:00"
+    },
+    {
+        "name": "Priya Patel",
+        "email": "priya@gmail.com",
+        "mobile": "9876543211",
+        "course": "Information Technology",
+        "date": "2026-10-05 15:52:00"
+    },
+    {
+        "name": "Rahul Sharma",
+        "email": "rahul.sharma@gmail.com",
+        "mobile": "9876543212",
+        "course": "Artificial Intelligence & Data Science",
+        "date": "2026-10-05 15:53:00"
+    },
+    {
+        "name": "Amit Kumar",
+        "email": "amit.kumar@gmail.com",
+        "mobile": "9876543213",
+        "course": "Cyber Security",
+        "date": "2026-10-05 15:54:00"
+    },
+    {
+        "name": "Neha Shah",
+        "email": "neha.shah@gmail.com",
+        "mobile": "9876543214",
+        "course": "Electrical Engineering",
+        "date": "2026-10-05 15:55:00"
+    },
+    {
+        "name": "Rohan Joshi",
+        "email": "rohan.joshi@gmail.com",
+        "mobile": "9876543215",
+        "course": "Mechanical Engineering",
+        "date": "2026-10-05 15:56:00"
+    },
+    {
+        "name": "Kavya Mehta",
+        "email": "kavya.mehta@gmail.com",
+        "mobile": "9876543216",
+        "course": "Civil Engineering",
+        "date": "2026-10-05 15:57:00"
+    }
+]
