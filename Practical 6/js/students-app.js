@@ -8,12 +8,12 @@
   const tableBody = document.getElementById('students-json-body');
   if (!tableBody) return; // only run on admin.html
 
-  const searchInput   = document.getElementById('students-search');
-  const branchSelect  = document.getElementById('students-branch');
-  const sortSelect    = document.getElementById('students-sort');
-  const paginationEl  = document.getElementById('students-pagination');
+  const searchInput = document.getElementById('students-search');
+  const branchSelect = document.getElementById('students-branch');
+  const sortSelect = document.getElementById('students-sort');
+  const paginationEl = document.getElementById('students-pagination');
   const resultCountEl = document.getElementById('students-result-count');
-  const stateEl       = document.getElementById('students-state');
+  const stateEl = document.getElementById('students-state');
 
   const ITEMS_PER_PAGE = 5;
 
@@ -40,6 +40,7 @@
   }
 
   function populateBranchOptions(students) {
+
     if (!branchSelect) return;
     const branches = [...new Set(students.map(s => s.branch))].sort();
     branchSelect.innerHTML = '<option value="">All Branches</option>' +
@@ -60,9 +61,9 @@
     });
 
     result = result.slice().sort((a, b) => {
-      if (sortBy === 'name-asc')  return a.name.localeCompare(b.name);
+      if (sortBy === 'name-asc') return a.name.localeCompare(b.name);
       if (sortBy === 'name-desc') return b.name.localeCompare(a.name);
-      if (sortBy === 'id-asc')    return a.studentId.localeCompare(b.studentId);
+      if (sortBy === 'id-asc') return a.studentId.localeCompare(b.studentId);
       return 0;
     });
 
@@ -110,9 +111,9 @@
       </tr>`;
   }
 
-  if (searchInput)  searchInput.addEventListener('input', debounce(() => { currentPage = 1; renderPage(); }, 300));
+  if (searchInput) searchInput.addEventListener('input', debounce(() => { currentPage = 1; renderPage(); }, 300));
   if (branchSelect) branchSelect.addEventListener('change', () => { currentPage = 1; renderPage(); });
-  if (sortSelect)   sortSelect.addEventListener('change', () => { currentPage = 1; renderPage(); });
+  if (sortSelect) sortSelect.addEventListener('change', () => { currentPage = 1; renderPage(); });
 
   loadStudents();
 })();

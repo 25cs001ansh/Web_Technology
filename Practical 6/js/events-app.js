@@ -5,14 +5,14 @@
    ============================================== */
 
 (function () {
-  const grid       = document.getElementById('events-json-grid');
+  const grid = document.getElementById('events-json-grid');
   if (!grid) return; // only run on events.html
 
-  const searchInput   = document.getElementById('events-search');
+  const searchInput = document.getElementById('events-search');
   const categorySelect = document.getElementById('events-category');
-  const sortSelect     = document.getElementById('events-sort');
-  const paginationEl   = document.getElementById('events-pagination');
-  const resultCountEl  = document.getElementById('events-result-count');
+  const sortSelect = document.getElementById('events-sort');
+  const paginationEl = document.getElementById('events-pagination');
+  const resultCountEl = document.getElementById('events-result-count');
 
   const ITEMS_PER_PAGE = 6;
 
@@ -58,7 +58,7 @@
     });
 
     result = result.slice().sort((a, b) => {
-      if (sortBy === 'date-asc')  return new Date(a.date) - new Date(b.date);
+      if (sortBy === 'date-asc') return new Date(a.date) - new Date(b.date);
       if (sortBy === 'date-desc') return new Date(b.date) - new Date(a.date);
       if (sortBy === 'title-asc') return a.title.localeCompare(b.title);
       return 0;
@@ -125,9 +125,9 @@
     return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
   }
 
-  if (searchInput)   searchInput.addEventListener('input', debounce(() => { currentPage = 1; renderPage(); }, 300));
+  if (searchInput) searchInput.addEventListener('input', debounce(() => { currentPage = 1; renderPage(); }, 300));
   if (categorySelect) categorySelect.addEventListener('change', () => { currentPage = 1; renderPage(); });
-  if (sortSelect)     sortSelect.addEventListener('change', () => { currentPage = 1; renderPage(); });
+  if (sortSelect) sortSelect.addEventListener('change', () => { currentPage = 1; renderPage(); });
 
   loadEvents();
 })();
