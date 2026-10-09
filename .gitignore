@@ -1,0 +1,5 @@
+# Ignore CSS2.docx as requested
+CSS2.docx
+css2.docx
+*.pyc
+__pycache__/
