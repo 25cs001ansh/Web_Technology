@@ -1,5 +1,5 @@
 <?php
-// Practical 8: Database Connection & Prepared Statement Data Retrieval Test
+
 require_once "db.php";
 ?>
 <!DOCTYPE html>
