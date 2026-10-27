@@ -34,9 +34,7 @@ Practical 14/
 ├── db.php              # Safe PDO database connection with error handling
 ├── schema.sql          # Complete MySQL schema and seed data (users, events, items, menus, audit_logs)
 ├── script.js           # Client-side asynchronous fetch API and DOM manipulation logic
-├── unauthorized.php    # HTTP 403 Forbidden Access Restricted error page
-├── charusat_logo.jpg   # University logo asset
-└── cspit_logo.jpg      # Institute logo asset
+└── unauthorized.php    # HTTP 403 Forbidden Access Restricted error page
 ```
 
 ---

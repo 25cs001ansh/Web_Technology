@@ -17,9 +17,6 @@ Practical 8 /
 ├── test_connection.php          # PHP code fetching data using Prepared Statements & JOIN queries
 ├── students.php                 # PHP script displaying student records
 ├── insert.php                   # Insert student record using Prepared Statements
-├── p8_db_connection.png         # Screenshot: PDO Database Connection Success
-├── p8_test_connection.png       # Screenshot: Prepared Statements & Relational Tables Browser Output
-├── Practical_8_Lab_Manual.docx  # CHARUSAT Practical 8 Submission Document (.docx)
 └── README.md                    # Practical 8 documentation and Submission Checklist
 ```
 

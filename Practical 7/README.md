@@ -13,7 +13,6 @@ Practical 7 /
 ├── display.php          # Page displaying stored JSON & CSV records in HTML table
 ├── submissions.json     # JSON storage file
 ├── submissions.csv      # CSV storage file
-├── Practical_7_Lab_Manual.docx  # CHARUSAT Laboratory Manual report
 └── README.md            # Comprehensive documentation
 ```
 

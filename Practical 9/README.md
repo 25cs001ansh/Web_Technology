@@ -13,7 +13,6 @@ Practical 9 /
 ├── process_register.php       # Secure MySQLi backend processor (Prepared Statements, Hashing, Duplicate Check)
 ├── users.php                  # Registered users list & Audit log viewer
 ├── schema.sql                 # SQL database dump for MySQL import
-├── Practical_9_Lab_Manual.docx# CHARUSAT Laboratory Manual report
 └── README.md                  # Documentation & Viva Voce Q&A
 ```
 

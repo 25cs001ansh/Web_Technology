@@ -15,19 +15,31 @@ Fetch external JSON data using the **Fetch API** and dynamically display it with
 ```text
 Practical-6/
 ├── css/
+│   └── style.css
 ├── data/
 │   ├── events.json
 │   ├── students.json
 │   └── faqs.json
 ├── js/
-│   ├── event-app.js
+│   ├── events-app.js
 │   ├── faq-app.js
 │   ├── main.js
 │   ├── students-app.js
 │   └── utils.js
-├── events.html
+├── about.html
 ├── admin.html
+├── attendance.html
+├── contact.html
+├── courses.html
+├── dashboard.html
+├── events.html
 ├── faq.html
+├── feedback.html
+├── index.html
+├── login.html
+├── notices.html
+├── profile.html
+├── register.html
 └── README.md
 ```
 
